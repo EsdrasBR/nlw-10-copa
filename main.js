@@ -24,10 +24,10 @@ function createCard(date, day, games) {
 
 document.querySelector('#app').innerHTML = `
   <header>
-    <img src="./assets/logo-fifa-2022.png" alt="Logo da Copa do Mundo FIFA 2022" />
+    <img src="./assets/fifa-world-cup-2022.svg" alt="Logo da Copa do Mundo FIFA 2022" />
   </header>
     <main id="cards">
-      ${createCard("20/11", "domingo", createGame("Catar", "Grupo A", "13:00", "Equador"))}
+      ${createCard("20/11", "domingo", createGame("Abertura", "Abertura", "12:00", "Abertura") + createGame("Catar", "Grupo A", "13:00", "Equador"))}
 
       ${createCard("21/11", "segunda", createGame("Inglaterra", "Grupo B", "10:00", "Irã") + createGame("Senegal", "Grupo A", "13:00", "Holanda") + createGame("Estados Unidos", "Grupo B", "16:00", "País de Gales"))}
 
