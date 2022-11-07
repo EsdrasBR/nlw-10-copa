@@ -35,6 +35,7 @@ body {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 body * {
@@ -136,7 +137,7 @@ header {
 
 .card {
   opacity: 0;
-  animation: appear 1.5s forwards;
+  animation: appear 1.3s forwards;
 }
 
 header>img {
@@ -155,7 +156,7 @@ header>img {
 
 @media (min-width: 700px) {
   #cards {
-    max-width: 670px;
+    max-width: 1015px;
     flex-direction: row;
     flex-wrap: wrap;
   }
