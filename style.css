@@ -60,6 +60,7 @@ header {
 }
 
 .card {
+  margin: 0px auto 0px auto;
   padding: 32px 23px;
   text-align: center;
 
