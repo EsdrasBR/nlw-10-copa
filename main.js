@@ -35,7 +35,7 @@ document.querySelector('#app').innerHTML = `
 
       ${createCard("23/11", "quarta", createGame("Marrocos", "Grupo F", "07:00", "Croácia") + createGame("Alemanha", "Grupo E", "10:00", "Japão") + createGame("Espanha", "Grupo E", "13:00", "Costa Rica") + createGame("Bélgica", "Grupo F", "16:00", "Canadá"))}
 
-      ${createCard("24/11", "quinta", createGame("Suíça", "Grupo G", "07:00", "Camarões") + createGame("Uruguai", "Grupo H", "10:00", "Coreia do Sul") + createGame("Portugal", "Grupo H", "13:00", "Gana") + createGame("Brasil", "Grupo F", "16:00", "Sérvia"))}
+      ${createCard("24/11", "quinta", createGame("Suíça", "Grupo G", "07:00", "Camarões") + createGame("Uruguai", "Grupo H", "10:00", "Coreia do Sul") + createGame("Portugal", "Grupo H", "13:00", "Gana") + createGame("Brasil", "Grupo G", "16:00", "Sérvia"))}
 
       ${createCard("25/11", "sexta", createGame("País de Gales", "Grupo B", "07:00", "Irã") + createGame("Catar", "Grupo A", "10:00", "Senegal") + createGame("Holanda", "Grupo A", "13:00", "Equador") + createGame("Inglaterra", "Grupo B", "16:00", "Estados Unidos"))}
 
