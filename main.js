@@ -1,11 +1,31 @@
 function createGame(player1, group, hour, player2) {
   return `
     <li>
-      <img src="./assets/icon-${player1}.svg" alt="Bandeira do ${player1}" title="${player1}"/>
-      <strong><span id="grupos">${group}</span> ${hour}</strong>
-      <img src="./assets/icon-${player2}.svg" alt="Bandeira da ${player2}" title="${player2}"/>
+      <div class="player-wrapper">
+      <img src="./assets/icon-${player1}.svg" alt="Bandeira do ${player1}" 
+      title="${player1}" onclick="batata('${player1}', '${group}', '${hour}', '${player2}')"/>
+
+      <p id="${player1}-${group}-${hour}-${player2}" style="display:none;">${player1}</p>
+      </div>
+
+      <strong class=""><span class="grupos">${group}</span> <span class="hour">${hour}</span></strong>
+
+      <div class="player-wrapper">
+      <img src="./assets/icon-${player2}.svg" alt="Bandeira da ${player2}" title="${player2}" onclick="batata('${player2}', '${group}', '${hour}', '${player1}')"/>
+
+      <p id="${player2}-${group}-${hour}-${player1}" style="display:none;">${player2}</p>
+      </div>
+
     </li>
   `
+}
+
+function batata(player1, group, hour, player2) {
+  const element=document.getElementById(player1+"-"+group+"-"+hour+"-"+player2)
+  const display=element.style.display
+  console.log(display)
+  element.style.display = display === "none" ? "block" : "none"
+  //setTimeout(()=>{element.style.display="none"}, 3000)
 }
 
 let delay = -0.2;
